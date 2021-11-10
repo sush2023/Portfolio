@@ -1874,7 +1874,7 @@ pre code {
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
-  border-color: #b3b7bb;
+  border-color: #dbe1e7;
 }
 
 .table-hover .table-secondary:hover {
@@ -2615,8 +2615,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #ecb0bd;
+  border-color: #1d1f20;
 }
 .btn-secondary:hover {
   color: #fff;
@@ -4380,7 +4380,7 @@ input[type=button].btn-block {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(243, 104, 104, 0.9);
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
@@ -6220,7 +6220,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #fd9f9f !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -6230,7 +6230,7 @@ button.bg-secondary:focus {
 }
 
 .bg-success {
-  background-color: #28a745 !important;
+  background-color: #eb7d7d !important;
 }
 
 a.bg-success:hover, a.bg-success:focus,
