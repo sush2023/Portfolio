@@ -80,9 +80,22 @@
             <section class="resume-section" id="Project Details">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Project Details</h2>
-                    <img src="assets/img/vulcan.png" alt="" style = "position:relative; left:200px; bottom:10px; width:500px; height:500px;" title="Most Innovative and Lightest Mass awards"/>
+                    <h3 class="mb-0">Electronics Hardware</h3>
+                    <br></br>
+
+                    <figcaption>
+                        This is the high-level global wiring diagram used for the VULCAN Electronic system
+                    </figcaption>
+                    <br></br>
+                    <img src="assets/img/globalwiring.jpg" alt="" style = "position:relative; left:200px; bottom:10px; width:500px; height:500px;" title="VULCAN PCB Layout"/>
+                    
+                    
+                    <br></br>
+
+                    <img src="assets/img/vulcan.png" alt="" style = "position:relative; left:50px; bottom:10px; width:500px; height:500px;" title="VULCAN PCB Layout"/>
+                    <img src="assets/img/pcb.jpg" alt="" style = "position:relative; left:80px; bottom:10px; width:500px; height:500px;" title="VULCAN PCB Layout"/>
                     <figcaption>This PCB was made primarily to reduce wiring complexity and allow for quick debugging. In addition to that, it allowed for using only one 24V Power Supply instead of 3 through some power branching analysis. This was crucial in achieving our lightest Mass Award as it removed ~4 
-                        pounds from the system.
+                        pounds from the system. 
                         <p> </p>
                         <L>
                         
@@ -153,8 +166,95 @@
                             <br></br>
                             
                         </L>
+                       
+                       
+                        <L>
+                            Factors for component/system placement decisions: 
+                            <UL>
+                                <i class="fas fa-wave-square"></i> 
+                                Signal Integrity
+                            
+
+                                <ul>
+                                    <li>
+                                        High Voltage components placed towards the right of the PCB while high speed data lines and signals placed towards the left
+                                    </li>
+                                </ul>
+                                
+                                <ul>
+                                    <li>
+                                        Arduino inputs and outputs placed in the left as the relays being the isolation factor for the outputted power on the right
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        Ground Planes for quick return paths for power traces located in the right of the PCB.    
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        Twisted/ "pigtailed" wires for further magentic field loop reduction
+                                    </li>
+                                </ul>
+                            </UL>
+                           
+                            <UL>
+                                <i class="fas fa-microchip"></i>
+                                Space Utilisation
+                                <ul>
+                                    <li>
+                                        Additional space left for possible future amendments
+                                    </li>
+                                </ul>
+                            </UL>
+                        </L>
+
+                        <L>
+                           Possible Improvements:
+                            <ul>
+                                <li>
+                                    4 layer board instead of 2 for power and ground plane inclusion 
+                                </li>
+                            </ul> 
+
+                            <ul>
+                                <li>
+                                    Compact PCB for better usage of extra PCB real estate through complete consideration of needed circuits/ components
+                                </li>
+                            </ul> 
+                        </L>
 
                     </figcaption>
+
+                    <h3 class="mb-0">Embedded Software and GUI</h3>
+                    <div class ="subheading mb-10">
+                        Embedded Arduino Software:
+                    </div>
+                    <div>
+                        <img src="assets/img/SwFC.PNG" alt="" style = "position:relative; left:80px; bottom:10px; width:500px; height:500px;" title="VULCAN PCB Layout"/>
+                        <figcaption>
+                            This is the High-Level SW flowchart. It was implemented into Arduino C code through a FSM representation. Each state would be an action the system executes with commands from the GUI being the state change triggers.
+                            <p>
+                                <a class="text-secondary" href="https://github.com/sush2023/MarsICE_2021/tree/main/Main">Check out the code in my github page!</a>
+                            </p>
+                        </figcaption>
+
+                        <br></br>
+
+                        <img src="assets/img/GUI.PNG" alt="" style = "position:relative; left:80px; bottom:10px; width:500px; height:500px;" title="VULCAN PCB Layout"/>
+                        <figcaption>
+                            This is the GUI generated from Matlab App Designer. Each button represents a callback function that triggers state change in the primary embedded software.
+                            <p>
+                                <a class="text-secondary" href="https://github.com/sush2023/MarsICE_2021/blob/main/VULCAN_GUI.mlapp">Check out the code in my github page!</a>
+                            </p>
+                        </figcaption>
+                        
+
+                    </div>
+
+                    
                 </div>
             </section> 
         </div>
